@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Somil Pandagre | Portfolio</title>
+  <meta name="description" content="Portfolio of Somil Pandagre — Information Technology Engineer at DTU." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- THE SAUCE: Interactive Dark Canvas -->
+  <canvas id="dark-matter"></canvas>
+  <div class="cursor-flare" id="cursor-flare"></div>
+
+  <!-- FLOATING GLASS NAV -->
+  <nav class="floating-nav">
+    <div class="nav-brand">GreyPanda</div>
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#connect">Connect</a>
+    </div>
+    <div id="clock" class="nav-clock"></div>
+  </nav>
+
+  <main class="content">
+    
+    <!-- HOME -->
+    <section id="home" class="section home">
+      <div class="hero-content tilt-element">
+        <div class="status-pill"><span class="status-dot"></span> Online & Building</div>
+        <div class="hero-tag">// Hello, world.</div>
+        <h1 class="glow-text">Somil<br /><span class="accent-gradient">Pandagre</span></h1>
+        <p class="hero-sub">Information Technology undergrad at <strong>Delhi Technological University</strong></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#connect" class="btn btn-outline">Connect</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text glass-card tilt-element">
+          <p>Currently an <strong>Information Technology</strong> undergrad at DTU out here turning caffeine into clean code.</p>
+          <p>IT Grad. Code wrangler. Professional Googler. 💻 I write Python scripts to automate my minor inconveniences and build web UIs that actually look good.</p>
+          <p class="meme-text">// I thrive at the sweet spot where software meets hardware, specializing in everything from C++ and Python automation to building interactive web experiences. When I'm not debugging my life away or deep in documentation, I'm probably exploring open-source projects</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card glass-card tilt-element">
+            <span class="stat-num glow-text">DTU</span>
+            <span class="stat-label">Information Technology</span>
+          </div>
+          <div class="stat-card glass-card tilt-element">
+            <span class="stat-num glow-text">2025</span>
+            <span class="stat-label">Batch Year</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category glass-card tilt-element">
+          <h3>Software</h3>
+          <div class="skill-tags">
+            <span>C / C++</span><span>Python</span><span>HTML & CSS</span><span>JavaScript</span><span>MATLAB</span><span>Bash</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card tilt-element">
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span>Git & GitHub</span><span>Cadence</span><span>LTspice</span><span>Linux</span><span>VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <div class="project-card glass-card tilt-element" data-project="vlsi-alu">
+          <div class="card-glow"></div>
+          <span class="card-tag">AI/ML</span>
+          <h3>KAGGLE PROJECTS</h3>
+          <p>Developed and evaluated multiple machine-learning models including Logistic Regression, Random Forest, XGBoost, LightGBM and CatBoost for classification and regression problems.</p>
+        </div>
+        <div class="project-card glass-card tilt-element" data-project="personal-site">
+          <div class="card-glow"></div>
+          <span class="card-tag">Web</span>
+          <h3>Personal Website</h3>
+          <p>This very portfolio — built with vanilla HTML, CSS & JS. Features dark/light mode, live clock, and interactive project details.</p>
+        </div>
+        <div class="project-card glass-card tilt-element" data-project="arduino-sensor">
+          <div class="card-glow"></div>
+          <span class="card-tag">Embedded</span>
+          <h3>IMAGE PROCESSING SUITE</h3>
+          <p>Implemented Canny edge detection, BGR/HSV/LAB/YCrCb color-space conversion, channel extraction, HSV color segmentation and K-Means-based dominant-color detection.</p>
+        </div>
+        <div class="project-card glass-card tilt-element" data-project="python-scripts">
+          <div class="card-glow"></div>
+          <span class="card-tag">Python</span>
+          <h3>REAL-TIME COMPUTER VISION PROJECTS</h3>
+          <p>Implemented video motion detection using frame differencing, thresholding, morphological dilation and contour-based bounding boxes to identify moving objects.</p>
+        </div>
+        <div class="project-card glass-card tilt-element" data-project="python-scripts">
+          <div class="card-glow"></div>
+          <span class="card-tag">Python</span>
+          <h3>BOOK PRICE COMPARISON — WEB SCRAPING</h3>
+          <p>Developed a Python-based web-scraping application to collect and compare book prices and product information from online sources.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONNECT -->
+    <!-- CONNECT -->
+    <section id="connect" class="section connect">
+      <h2 class="section-title" style="color: #ffffff !important;">Let's Link Up</h2>
+      <div class="connect-links">
+        <a href="https://github.com/SOMIL-PANDAGRE-028" class="connect-card glass-card tilt-element" target="_blank" style="text-decoration: none;">
+          <span class="connect-name" style="color: #ffffff !important;">GitHub</span>
+          <span class="connect-handle" style="color: #ffffff !important; opacity: 0.8;">@SOMIL-PANDAGRE-028</span>
+        </a>
+        <a href="https://www.linkedin.com/in/somil-pandagre/" class="connect-card glass-card tilt-element" target="_blank" style="text-decoration: none;">
+          <span class="connect-name" style="color: #ffffff !important;">LinkedIn</span>
+          <span class="connect-handle" style="color: #ffffff !important; opacity: 0.8;">somilpandagre</span>
+        </a>
+        <a href="mailto:pandagre2006somil@gmail.com" class="connect-card glass-card tilt-element" target="_blank" style="text-decoration: none;">
+          <span class="connect-name" style="color: #ffffff !important;">Email</span>
+          <span class="connect-handle" style="color: #ffffff !important; opacity: 0.8;">pandagre2006somil@gmail.com</span>
+        </a>
+        <a href="https://wa.me/9669789328" class="connect-card glass-card tilt-element" target="_blank" style="text-decoration: none;">
+          <span class="connect-name" style="color: #ffffff !important;">WhatsApp</span>
+          <span class="connect-handle" style="color: #ffffff !important; opacity: 0.8;">+91 9669789328</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- OVERLAY MODAL -->
+  <div class="project-overlay" id="project-overlay" aria-hidden="true">
+    <div class="overlay-backdrop" id="overlay-backdrop"></div>
+    <div class="overlay-panel glass-card" id="overlay-panel">
+      <button class="overlay-close" id="overlay-close">✕</button>
+      <div class="overlay-scroll">
+        <h2 class="overlay-title glow-text" id="ol-title"></h2>
+        <p class="overlay-summary" id="ol-summary"></p>
+        <div class="overlay-section">
+          <h3>What I Did</h3>
+          <p id="ol-what"></p>
+        </div>
+        <div class="overlay-section">
+          <h3>How I Did It</h3>
+          <p id="ol-how"></p>
+        </div>
+        <div class="overlay-tech-block">
+          <h3>Tech Stack</h3>
+          <div class="overlay-tags" id="ol-tech"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
