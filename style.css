@@ -152,3 +152,79 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.5px; }
 .overlay-close:hover { background: var(--accent-purple); }
 .overlay-title { font-size: 2rem; margin-bottom: 10px; }
 .overlay-section h3 { margin-top: 20px; margin-bottom: 10px; color: var(--accent-neon); font-family: var(--font-mono); font-size: 1rem;}
+
+
+
+
+/* --- CONNECT SECTION BASE --- */
+.section.connect {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.connect-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- THE CARDS --- */
+.connect-card {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  color: #ffffff;
+  min-width: 220px;
+  /* Smooth transition for the hover flex! */
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s ease, 
+              background 0.3s ease; 
+}
+
+/* --- GLASSMORPHISM EFFECT --- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05); /* subtle white background */
+  backdrop-filter: blur(10px); /* The blur magic */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- INTERACTIVE HOVER STATE --- */
+.connect-card:hover {
+  transform: translateY(-8px) scale(1.02); /* Lifts up and grows slightly */
+  background: rgba(255, 255, 255, 0.1); /* Gets slightly brighter */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* --- TYPOGRAPHY INSIDE CARDS --- */
+.connect-name {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.connect-handle {
+  opacity: 0.7; /* Replaces your inline opacity */
+  font-size: 0.95rem;
+  font-family: monospace; /* Gives a cool dev aesthetic */
+  transition: opacity 0.3s ease;
+}
+
+.connect-card:hover .connect-handle {
+  opacity: 1; /* Handle lights up when hovered */
+}
